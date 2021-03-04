@@ -1,3 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --background: #191d32;
+  --font: #dfdfdf;
+  --label: #165f81;
+  --lighten-label: #276f92;
+  --buttons: #247ba0;
+  --send: #0d8d34;
+  --send-light: #1f9f45;
+  --clear: #aa3815;
+  --clear-light: #bb4926;
+  --file-bg: #00798c;
+  --file-correct: #108340;
+  --file-incorrect: #8f0b1d;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: var(--font);
+  outline: none;
+}
+
 body {
-  font-family: sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--background);
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons button:first-child {
+  background: var(--send);
+}
+
+.buttons button:first-child:hover {
+  background: var(--send-light);
+}
+
+.buttons button {
+  background: var(--clear);
+  border: 2px solid #303030;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.buttons button:hover {
+  background: var(--clear-light);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

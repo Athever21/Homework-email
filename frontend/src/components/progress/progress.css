@@ -1,0 +1,20 @@
+progress::-webkit-progress-value {
+  transition: width 0.1s ease-in-out;
+  background: #38a82e;
+}
+
+.progress label {
+  margin-left: auto;
+  transition: content 1s;
+}
+
+.progress progress {
+  width: 100%;
+  border-radius: 0;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}

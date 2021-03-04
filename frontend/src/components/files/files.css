@@ -1,0 +1,38 @@
+.file {
+  display: flex;
+  flex-direction: column;
+  background: var(--file-bg);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.header {
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: baseline;
+}
+
+.header p {
+  margin-left: auto;
+}
+
+.error {
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
+.emails {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.email {
+  display: flex;
+}
+
+.email .err {
+  font-weight: bold;
+  margin-left: 1rem;
+}
